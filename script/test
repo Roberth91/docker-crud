@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+docker-compose run --rm php-fpm \
+	/bin/bash -c "vendor/bin/phpunit"

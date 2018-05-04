@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+set -e
+[ -z "${DEBUG}" ] || set -x
+
+cd "$(dirname "$0")/.."
+
+echo "--> Bootstrapping application"
+
+script/bootstrap
+
+echo "--> Done"
+
+echo "--> Building containers"
+
+script/build
+
+echo "--> Containers built"    
+
+echo "--> Launching containers"
+
+script/server
+
+echo "--> Containers running..."
+
+echo "--> Testing application"
+
+script/test
+
+echo "--> Setup complete.. run the application with script/run"
