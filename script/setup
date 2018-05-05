@@ -11,12 +11,6 @@ script/bootstrap
 
 echo "--> Done"
 
-echo "--> Building containers"
-
-script/build
-
-echo "--> Containers built"    
-
 echo "--> Launching containers"
 
 script/server
@@ -27,4 +21,4 @@ echo "--> Testing application"
 
 script/test
 
-echo "--> Setup complete.. run the application with script/run"
+echo "--> Setup complete.. access localhost:8000/user in browser"

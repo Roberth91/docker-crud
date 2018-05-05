@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-set -e
-
-cd "$(dirname "$0")/.."
-
-docker-compose run --rm app \
-	/bin/bash -c "php bin/run.php"

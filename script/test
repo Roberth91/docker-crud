@@ -5,4 +5,4 @@ set -e
 cd "$(dirname "$0")/.."
 
 docker-compose run --rm php-fpm \
-	/bin/bash -c "vendor/bin/phpunit"
+	/bin/bash -c "php bin/phpunit"
