@@ -16,9 +16,3 @@ echo "--> Launching containers"
 script/server
 
 echo "--> Containers running..."
-
-echo "--> Testing application"
-
-script/test
-
-echo "--> Setup complete.. access localhost:8000/user in browser"
